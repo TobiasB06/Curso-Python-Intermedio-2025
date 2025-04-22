@@ -11,4 +11,6 @@ except FileNotFoundError:
     
     with open("Contraseñas.txt", "w") as archivo:
         archivo.write(contraseña_nueva)
+finally:
+    archivo.close()
     
