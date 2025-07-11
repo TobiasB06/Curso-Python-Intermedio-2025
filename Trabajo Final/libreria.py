@@ -789,7 +789,7 @@ class BibliotecaApp:
             ], scroll=True, expand=1, vertical_alignment=ft.CrossAxisAlignment.START)
         ], horizontal_alignment=ft.CrossAxisAlignment.CENTER)
     def handle_change(self, e, es_fecha=True):
-        fecha_str = e.data[:10]  # corta en "YYYY-MM-DD"
+        fecha_str = e.data[:10] 
         self.fecha_prestamo_field.value = datetime.strptime(fecha_str, "%Y-%m-%d").strftime("%d/%m/%Y")
         self.page.update()
 
