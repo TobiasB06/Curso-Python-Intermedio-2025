@@ -5,6 +5,7 @@ entrada = input("Ingresar numeros separados por espacios: ")
 
 entrada = entrada.split()
 entrada = [float(i) for i in entrada]
+
 resultado = promedio(*entrada)
 
-print(resultado)
+print(" El promedio es:",resultado)

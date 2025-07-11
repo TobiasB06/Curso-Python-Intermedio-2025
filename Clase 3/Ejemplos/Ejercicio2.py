@@ -1,4 +1,5 @@
 def buscar_palabra(palabra, *args):
+    print(args)
     return f"Palabra encontrada {palabra}" if palabra in args else "Palabra no encontrada"
 
 entrada = input("Ingresar palabras separadas por espacios: ")
